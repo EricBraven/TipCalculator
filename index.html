@@ -19,28 +19,28 @@
      	 <div class="flex-container">
      		<div class="semi-container">
      			<h2>Bill</h2>
-     		    <input type="text" name="bill" class="billinput" placeholder="142.55">
-     		    <img src="images/icon-dollar.svg">
+     		    <input type="number" name="bill" id="input" class="billinput" placeholder="142.55">
+     		    <img src="images/icon-dollar.svg" alt="dollar">
      		</div>
      		<div class="semi">
      			<h2>Select Tip %</h2>
      			<div class="buttons">
      				<div class="btn1">
-     					 <a href="#"><button class="per5">5%</button></a>
-     				     <a href="#"><button class="per10">10%</button></a><a href="#"><button class="per15">15%</button></a>
+     					 <button class="per5" id="percent5" value="0.05">5%</button>
+     				     <button class="per10" id="percent10" value="0.10">10%</button><button id="percent15" class="per15">15%</button>
      				</div>
      				<div class="btn2">  
-     					<a href="#"><button class="">25%</button></a>
-     				    <a href="#"><button class="">50%</button></a>
-     				    <a href="#"><button class="greybtn">Custom</button></a>
+     					<button class="per25" id="percent25" value="0.25">25%</button>
+     				    <button class="per50" id="percent50" value="0.50">50%</button>
+     				    <input type="number" name="custom" id="custom" class="custom" placeholder="Custom">
      				</div>
      			</div>
      		</div>
 
      		
      			<div class="zemi1">
-     				<h2>Number of People</h2>
-     				<input type="text" name="number" placeholder="5">
+     				<h2>Number of People <span>Can't be zero</span></h2>
+     				<input type="number" name="number" class="Numberpeople" id="number" placeholder="5">
      				<img src="images/icon-person.svg">
      			</div>
 
@@ -49,11 +49,11 @@
      			<div class="zem">
      				<div>
      					<h3>Tip Amount</h3>
-     					<p>/ person</p>
+     					<p class="person">/ person</p>
      				</div>
      				<div class="ze">
      					<img src="images/icon-dollar.svg">
-     					<p>4.27</p>
+     					<p class="perPersonTip green" id="perPersonTip">4.27</p>
      				</div>
      			</div>
 
@@ -64,13 +64,17 @@
      				</div>
      				<div class="ze">
      					<img src="images/icon-dollar.svg">
-     					<p>32.79</p>
+     					<p class="total-tip green" id="total-tip">32.79</p>
      				</div>
      			</div>
 
-     			<a href="#"><button class="btn">RESET</button></a>
+     			<button class="reset btn" id="reset" >RESET</button>
      		</div>
      	</div>
      </div>
+     <script type="text/javascript" src="javascript.js">
+         
+
+     </script>
 </body>
 </html>
