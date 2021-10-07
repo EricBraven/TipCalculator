@@ -197,6 +197,7 @@ function resetBack(){
         custom.value = "";
         totalTip.innerHTML = "0.00";
         personTip.innerHTML = "0.00";
+        span.style.display = "none";
     }
 }
 
