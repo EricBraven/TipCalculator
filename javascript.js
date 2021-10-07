@@ -192,8 +192,8 @@ function resetBack(){
     let totalTip = document.querySelector("#total-tip");
     let personTip = document.querySelector("#perPersonTip");
     if(people != "0" || bill != "0"){
-        bill = "";
-        people = "";
+        bill.value = "";
+        people.value = "";
         custom.value = "";
         totalTip.innerHTML = "0.00";
         personTip.innerHTML = "0.00";
